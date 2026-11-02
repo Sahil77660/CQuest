@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="decision_control.html" class="active">Desicion Control Structure</a>
+                <a href="../Loops/loops-index.html">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="../String/string_index.html">String</a>
+                <a href="../structures/structures.html">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 14</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question14: </span
+            ><br />
+  Enter a number from the user if the user enters 30 then print the month in which we have 30 days. If the enter 31 then print the month 31 days for 28, 29 print the month else everything is invalid ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+            <pre><code>#include &lt;stdio.h&gt;
+void main()
+{
+    int days;
+
+    printf("Enter number of days = ");
+    scanf("%d",&days);
+
+    if(days==30)
+        printf("April, June, September, November");
+    else if(days==31)
+        printf("January, March, May, July, August, October, December");
+    else if(days==28 || days==29)
+        printf("February");
+    else
+        printf("Invalid");
+
+}
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter number of days = 31
+
+
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+January, March, May, July, August, October, Decemberst
+
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program13.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href="program15.html"> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

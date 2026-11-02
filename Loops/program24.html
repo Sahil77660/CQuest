@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="../decision control structure/decision_control.html" >Desicion Control Structure</a>
+                <a href="loops-index.html" class="active">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="../String/string_index.html">String</a>
+                <a href="../structures/structures.html">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 24</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question24: </span
+            ><br />
+      Enter a number from user and check it is Armstrong number or not ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+<pre><code>
+#include &lt;stdio.h&gt;
+
+void main()
+{
+    int num, original, remainder, result=0;
+
+    printf("Enter a number: ");
+    scanf("%d",&num);
+
+    original=num;
+
+    while(num>0)
+    {
+        remainder=num%10;
+        result=result+(remainder*remainder*remainder);
+        num=num/10;
+    }
+
+    if(original==result)
+    {
+        printf("%d is an Armstrong number",original);
+    }
+    else
+    {
+        printf("%d is not an Armstrong number",original);
+    }
+}
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter a number: 153
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+153 is an Armstrong number
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program23.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href="program25.html"> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

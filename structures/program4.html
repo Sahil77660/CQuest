@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="../decision control structure/decision_control.html" >Desicion Control Structure</a>
+                <a href="../Loops/loops-index.html">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="../String/string_index.html">String</a>
+                <a href="structures.html"class="active">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 04</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question4: </span
+            ><br />
+        Enter student details like roll name, fee, DOB and print all the detail by ascending order of roll number ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+            <pre><code>#include &lt;stdio.h&gt;
+
+#include<stdio.h>
+
+struct student
+{
+    int roll;
+    char name[30];
+    float fee;
+    char dob[15];
+};
+
+void main()
+{
+    int i, j;
+    struct student stu[50], temp;
+
+    for(i=0;i&lt;50;i++)
+    {
+        printf("\nEnter details of Student %d\n",i+1);
+
+        printf("Enter Roll Number = ");
+        scanf("%d",&stu[i].roll);
+
+        printf("Enter Name = ");
+        scanf("%s",stu[i].name);
+
+        printf("Enter Fee = ");
+        scanf("%f",&stu[i].fee);
+
+        printf("Enter DOB (DD-MM-YYYY) = ");
+        scanf("%s",stu[i].dob);
+    }
+
+    for(i=0;i&lt;49;i++)
+    {
+        for(j=0;j&lt;49-i;j++)
+        {
+            if(stu[j].roll > stu[j+1].roll)
+            {
+                temp=stu[j];
+                stu[j]=stu[j+1];
+                stu[j+1]=temp;
+            }
+        }
+    }
+
+    printf("\n--------------------------------------------------\n");
+    printf("Roll\tName\tFee\t\tDOB\n");
+    printf("--------------------------------------------------\n");
+
+    for(i=0;i&lt;50;i++)
+    {
+       printf("%d\t%s\t%f\t\t%s\n",stu[i].roll,stu[i].name,stu[i].fee,stu[i].dob);
+    }
+}
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter details of Student 1
+Enter Roll Number = 104
+Enter Name = Rahul
+Enter Fee = 25000
+Enter DOB (DD-MM-YYYY) = 12-05-2007
+
+Enter details of Student 2
+Enter Roll Number = 101
+Enter Name = Aman
+Enter Fee = 30000
+Enter DOB (DD-MM-YYYY) = 15-08-2006
+
+Enter details of Student 3
+Enter Roll Number = 103
+Enter Name = Ravi
+Enter Fee = 28000
+Enter DOB (DD-MM-YYYY) = 20-01-2007
+
+Enter details of Student 4
+Enter Roll Number = 102
+Enter Name = Karan
+Enter Fee = 27000
+Enter DOB (DD-MM-YYYY) = 10-11-2006
+
+...
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+--------------------------------------------------
+Roll    Name    Fee             DOB
+--------------------------------------------------
+101     Aman    30000.00        15-08-2006
+102     Karan   27000.00        10-11-2006
+103     Ravi    28000.00        20-01-2007
+104     Rahul   25000.00        12-05-2007
+
+
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program3.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href=""> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

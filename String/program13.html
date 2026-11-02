@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="../decision control structure/decision_control.html" >Desicion Control Structure</a>
+                <a href="../Loops/loops-index.html">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="string_index.html"class="active">String</a>
+                <a href="../structures/structures.html">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 13</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question13: </span
+            ><br />
+        Enter two string from user and print difference each character ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+            <pre><code>#include &lt;stdio.h&gt;
+
+void main()
+{
+    char str1[20], str2[20];
+    int i, diff;
+
+    printf("Enter first string: ");
+    scanf("%s", str1);
+
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    for(i = 0; str1[i] != '\0' && str2[i] != '\0'; i++)
+    {
+        diff = str1[i] - str2[i];
+        printf("%c - %c = %d\n", str1[i], str2[i], diff);
+    }
+}
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter first string: ABC
+Enter second string: ACE
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+A - A = 0
+B - C = -1
+C - E = -2
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program12.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href="program14.html"> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

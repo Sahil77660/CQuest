@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .headerr {
+    background-color: #f4f7fb;
+  }
+
+  .color {
+    background-color: #f4f7fb;
+  }
+
+  .headerr {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4b6cb7;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .c {
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+  }
+
+  .program {
+    color: #ffd166;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 12px;
+  }
+
+  .nav :hover {
+    color: #ffd166;
+  }
+
+  .hero {
+    margin: 86px;
+  }
+
+  .tag {
+    font-weight: bold;
+    display: inline;
+    border-radius: 26px;
+    color: #4b6cb7;
+    padding: 10px 24px;
+    background-color: #e8efff;
+  }
+
+  .learn {
+    margin-bottom: 5px;
+    margin-top: 9px;
+    color: #182848;
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  .through {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #4b6cb7;
+    font-weight: bold;
+  }
+
+  .para {
+    margin-top: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  .explore {
+    display: inline;
+    padding: 17px;
+    border-radius: 15px;
+
+    color: white;
+    background-color: #4b6cb7;
+    text-decoration: none;
+  }
+
+  .explore:hover {
+    background: black;
+  }
+  .view {
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    padding: 18px;
+    border-radius: 7px;
+    color: #182848;
+    font-weight: bold;
+  }
+  .view:hover {
+    border: 1px solid black;
+
+    border-radius: 15px;
+  }
+
+  .codding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #f4f7fb;
+    border: 2px solid #f4f7fb;
+  }
+
+  .code {
+    margin-top: 45px;
+    background-color: #182848;
+    width: 20vw;
+    height: 35vh;
+    padding: 39px;
+    border: 2px solid #182848;
+    border-radius: 25px;
+    /* margin-right:278px; */
+    box-shadow: 12px 8px 17px 5px #000000;
+  }
+
+  .everything {
+    text-align: center;
+    font-size: 39px;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 76px;
+  }
+
+  .understand {
+    color: grey;
+    text-align: center;
+  }
+
+  .everything2 {
+    margin-top: 78px;
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+  }
+
+  .item {
+    width: 18vw;
+    height: 20vh;
+    border: 2px solid whitesmoke;
+    padding: 15px;
+    background: #f7f9fc;
+    border-radius: 17px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .item:hover {
+    transform: translateY(-6px);
+ 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .new1 {
+    display: inline-block;
+    color: #4b6cb7;
+    background-color: #91abe73e;
+    font-size: 30px;
+    padding: 7px 12px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .new2 {
+    color: grey;
+  }
+
+  .categories {
+    padding: 30px 8%;
+    background-color: #f4f7fb;
+    margin-top: 127px;
+    text-align: center;
+    min-height: 45ch;
+  }
+
+  .explore2 {
+    margin-top: 56px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  .select1 {
+    color: grey;
+    font-size: small;
+  }
+
+  .categories-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .catagory{
+    background-color: white;
+    border: 2px solid #f4f7fb;
+    padding: 19px 15px;
+    border-radius: 6px;
+    color:#182848;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .categories-grid a{
+
+    text-decoration: none;
+  }
+  .catagory:hover{
+    background: #4b6cb7;
+    color: white;
+    transform:translateY(-4px)
+  }
+  .ready{
+    padding: 76px 17%;
+  }
+  .end{
+    /* background-color: #182848; */
+    background:linear-gradient(90deg,#182848,#4b6cb7);
+    text-align: center;
+    padding: 46px 8%;
+    border-radius: 15px;
+    margin-top: 56px;
+    margin:56px auto;
+    width: 50vw;
+  }
+  .ready-heading{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.8;
+  }
+  .afterheading{
+    color: white;
+    line-height: 1.4;
+
+  }
+  .endview{
+    display: inline-block;
+    text-decoration: none;
+    color:#182848;
+    margin-top: 26px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  .footer{
+    background-color: #182848;
+    padding: 15px;
+   text-align: center;
+  }
+  .footer-heading{
+  color: grey;
+  font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+  <header class="headerr">
+    <div class="c">C <span class="program">Programming</span> Lab</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index2.html">Programs</a>
+      <a href="#everything">About</a>
+    </nav>
+  </header>
+  <section class="codding">
+    <div class="hero">
+      <div class="tag">C language project</div>
+      <div class="learn">Learn C Programming</div>
+      <div class="through">Through Programming</div>
+      <div class="para">
+        Explore C programming questions with their <br />
+        syntax, input and <br />output examples. A simple place to understand
+        <br />and practice fundamental <br />C programs.
+      </div>
+    <a href="index2.html" class="explore">Explore Program →</a>
+    <a href="#categories-grid" class="view">View Category</a>
+    </div>
+    <div class="code">
+      <span style="color: aqua">#include </span>
+      <span style="color: #f4f7fb"> &lt;stdio.h&gt;</span>
+      <br />
+      <br />
+      <span style="color: aqua">void</span>
+      <span style="color: #f4f7fb">main()</span>
+      <br />
+      <span style="color: #f4f7fb">{ </span>
+      <br />
+      <span style="color: aqua">int</span>
+      <br />
+      <br />
+      <span style="color: #f4f7fb">Printf(</span>
+      <span style="color: #ffd166"> "Enter the number="</span>
+      <span style="color: white">);</span>
+      <br />
+      <span style="color: #f4f7fb"> Scanf(</span>
+      <span style="color: #ffd166"> "%d",&n</span>
+      <span style="color: white">);</span>
+      <br />
+      <br />
+      <span style="color: #f4f7fb">Printf(</span>
+      <span style="color: #ffd166"> "Number=%d",n</span>
+      <span style="color: white">);</span>
+      <br />
+      <br />
+      <span style="color: #f4f7fb">}</span>
+    </div>
+  </section>
+  <section class="new">
+    <div class="everything" id="everything">Everything You Need</div>
+    <div class="understand">Understand programs from question to output.</div>
+    <div class="everything2">
+      <div class="item">
+        <span class="new1">?</span> <br /><br />Question
+        <br />
+        <br />
+        <span class="new2">Read the programming question before looking at the solution.</span>
+      </div>
+      <div class="item">
+        <span class="new1">&lt;/&gt;</span> <br />
+        <br />Syntax
+        <br />
+        <br />
+        <span class="new2">View the complete C program written for the given question.</span>
+      </div>
+      <div class="item">
+        <span class="new1">IN</span><br /><br />Input <br /><br /><span class="new2">See the values entered by the user
+          while running the program.</span>
+      </div>
+      <div class="item">
+        <span class="new1">OUT</span> <br /><br />Output <br /><br />
+        <span class="new2">Understand what the program produces after execution.</span>
+      </div>
+    </div>
+  </section>
+  <section class="categories">
+    <div class="explore2">
+      Explore C Program
+      <br />
+      <span class="select1">Select a category to start learning.</span>
+    </div>
+    <div class="categories-grid" id="categories-grid">
+     <a href="basic program/basic_index.html" class="catagory">BASIC INPUT OUTPUT</a>
+     <a href="operators/operators_index.html" class="catagory">OPERATORS</a>
+     <a href="decision control structure/decision_control.html" class="catagory">DECISION CONTROL STRUCTURE</a>
+     <a href="Loops/loops-index.html" class="catagory">Loops</a>
+     <a href="Array/array_index.html" class="catagory">Array</a>
+     <a href="function/function_index.html" class="catagory">Function</a>
+     <a href="String/string_index.html" class="catagory">Strings</a>
+     <a href="structures/structures.html" class="catagory">STRUCTURES</a>
+
+    </div>
+    <div class="end">
+    <div class="ready-heading">Ready to Explore C Programs?</div>
+    <div class="afterheading">Start with basic programs and gradually move towards advanced concepts.</div>
+      <a href="index2.html" class="endview">View All programs →</a>
+  </div>
+  </section>
+  <section class="footer"> <div class="footer-heading">© 2026 C Porgamming lab</div></section>
+</body>
+
+</html>

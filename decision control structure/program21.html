@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="decision_control.html" class="active">Desicion Control Structure</a>
+                <a href="../Loops/loops-index.html">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="../String/string_index.html">String</a>
+                <a href="../structures/structures.html">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 21</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question21: </span
+            ><br />
+Enter current date of DOB of user and find out difference ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+            <pre><code>#include &lt;stdio.h&gt;
+
+void check( int date,int month ,int year,int *p1)
+{
+   
+     if(year%4==0)
+    {
+        if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+        { 
+            if(date>=1 && date<=31)
+            {
+              *p1=1;
+            }
+        }
+    
+        else if (month==2)
+        {
+            if(date>=1 && date<=29)
+            {
+                *p1=1;
+            } 
+        }
+        
+        else if(month==4 || month==6 || month==9 || month==11)
+        { 
+            if(date>=1 && date<=30)
+            {
+               *p1=1;
+            }
+        }
+    }
+
+
+    else if(year%4)
+    {
+        if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+        { 
+            if(date>=1 && date<=31)
+            {
+               *p1=1;
+            }
+        }
+        
+    
+        else if (month==2)
+        {
+            if(date>=1 && date<=28)
+            {
+             *p1=1;
+            }
+           
+        }
+        
+        else if(month==4 || month==6 || month==9 || month==11)
+        { 
+            if(date>=1 && date<=30)
+            {
+               *p1=1;
+            }
+        }  
+    }
+ 
+}
+void main()
+{
+    int date,year,month,num1=0,date1,month2,year3,num2=0,new1,new2,new3;
+    printf("Enter the current date=");
+    scanf("%d",&date);
+    printf("Enter the current month number =");
+    scanf("%d",&month);
+    printf("Enter the current year=");
+    scanf("%d",&year);
+
+    
+
+    printf("Now enter your Date of birth...");
+    printf("\nEnter the date=");
+    scanf("%d",&date1);
+    printf("Enter the month number =");
+    scanf("%d",&month2);
+    printf("Enter the year=");
+    scanf("%d",&year3);
+    if(year>year3){
+    check(date1,month2,year3,&num2);
+    check(date,month,year,&num1);
+    }
+    else{
+        printf("Invalid date of birth");
+    }
+    if(num1==1 && num2==1)
+    {
+        if(date>date1)
+       {new1=date-date1;}
+       else{new1=date1-date;}
+        new2=month-month2;
+        new3=year-year3;
+    }
+    printf("%d year %d month %d date",new3,new2,new1);
+}
+
+
+
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter the current date=26
+Enter the current month number =10  
+Enter the current year=2026
+Now enter your Date of birth...
+Enter the date=29
+Enter the month number =1
+Enter the year=2009
+
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+17 year 9 month 3 date
+
+
+
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program20.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href=""> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

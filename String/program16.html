@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../new.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="c">C <span style="color: #ffd166">Porgamming</span></div>
+    </header>
+    <div class="main">
+      <aside>
+        <div class="cprograms">C Programs</div>
+        <div class="link">
+                <a href="../basic program/basic_index.html">Basic input Output</a>
+                <a href="../operators/operators_index.html">Operators</a>
+                <a href="../decision control structure/decision_control.html" >Desicion Control Structure</a>
+                <a href="../Loops/loops-index.html">Loops</a>
+                <a href="../Array/array_index.html">Array</a>
+                <a href="../function/function_index.html">Function</a>
+                <a href="string_index.html"class="active">String</a>
+                <a href="../structures/structures.html">Structures</a>
+        </div>
+      </aside>
+      <div class="basicinput">
+        <div class="langauge">C Language Programs</div>
+        <div class="questionsyntax">
+          Questions, syntax, input and output of C programs
+        </div>
+        <div class="program1box">
+          <div class="program1">Program 16</div>
+          <div class="question1">
+            <span style="color: #182848; font-weight: bold"> Question16: </span
+            ><br />
+       String palindrome example (using reverse) ?
+          </div>
+          <div class="csyntax">C program/Syntax</div>
+          <div class="codding1">
+            <pre><code>#include &lt;stdio.h&gt;
+#include&lt;stdio.h&gt;
+
+void main()
+{
+    char str[20], rev[20];
+    int i, j;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    for(i = 0; str[i] != '\0'; i++);
+
+    j = 0;
+
+    for(i = i - 1; i >= 0; i--)
+    {
+        rev[j] = str[i];
+        j++;
+    }
+
+    rev[j] = '\0';
+
+    printf("Reverse string = %s\n", rev);
+
+    if(strcmp(str, rev) == 0)
+        printf("String is palindrome");
+    else
+        printf("String is not palindrome");
+}
+</code></pre>
+          </div>
+          <div class="input-output">
+            <div class="input">
+              <span class="input1" style="font-weight: bold;">Input</span>
+              <div class="inputreal">
+                <pre>
+                    <code style="font-size: 15px;">
+Enter a string:MADAM
+                    </code>
+                </pre>
+              </div>
+            </div>
+            <div class="output">
+              <span class="output1" style="font-weight: bold;">Output</span>
+              <div class="outputreal">
+                <pre>
+                    <code style="font-size: 14px; ">
+String is palindrome 
+                    </code></pre></div>
+            </div>
+          </div>
+          <div class="previous"><a href="program15.html"> ← Previous</a></div>
+          <div class="next_program">
+            <a href=""> Next Program →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

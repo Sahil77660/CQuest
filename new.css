@@ -1,0 +1,190 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    header {
+      background-color: #4b6cb7;
+      padding: 25px;
+    }
+
+    .c {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+    }
+
+    .cprograms {
+      color: #ffd166;
+      font-size: 20px;
+      padding: 15px;
+    }
+
+    aside {
+      display: flex;
+      display: inline-block;
+      background-color: #182848;
+      min-height: 100vh;
+      width: 15vw;
+      padding: 20px 0px;
+    }
+
+    .link {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link a {
+      text-decoration: none;
+      color: #d1d5db;
+      padding: 19px 25px;
+    }
+
+    .link a:hover {
+      border-radius: 16px;
+      background-color: gray;
+    }
+
+    .link a.active {
+      background: #4b6cb7;
+      color: white;
+      border-radius: 16px;
+    }
+
+    .langauge {
+      color: #182848;
+      font-weight: bold;
+      font-size: 29px;
+    }
+
+    .basicinput {
+      padding: 34px;
+    }
+
+    .questionsyntax {
+      color: gray;
+      margin-top: 7px;
+    }
+
+    .program1box {
+      border: 2px solid white;
+      background-color: white;
+      width: 60vw;
+      margin: 35px;
+      padding: 26px;
+    }
+
+    .program1 {
+      color: #4b6cb7;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .question1 {
+      background-color: #f4f7fb;
+      border-left: 5px solid #4b6cb7;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    .csyntax {
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .codding1 {
+      background-color: #182848;
+      color: white;
+      padding: 18px;
+      border-radius: 18px;
+    }
+
+    .input-output {
+      display: flex;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .input,
+    .output {
+      flex: 1;
+    }
+
+    .input,
+    .output {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .inputreal {
+      border: 1px solid rgb(202, 202, 129);
+      background-color: rgb(232, 232, 125);
+      padding: 12px;
+      border-radius: 14px;
+      min-height: 12vh;
+      margin-top: 10px;
+    }
+
+    .outputreal {
+      border: 1px solid green;
+      background-color: rgb(226, 239, 226);
+      padding: 12px;
+      border-radius: 14px;
+      max-width: 25vw;
+      min-height: 12vh;
+      margin-top: 10px;
+    }
+
+    .previous {
+      display: inline-block;
+
+      margin-top: 29px;
+    }
+
+    .previous a {
+      text-decoration: none;
+      color: white;
+      background-color: #4b6cb7;
+      padding: 10px 25px;
+      border-radius: 12px;
+    }
+
+    .previous a:hover {
+      background-color: #182848;
+    }
+
+    .next_program {
+      display: inline-block;
+    }
+
+    .next_program a {
+      text-decoration: none;
+      color: white;
+      background-color: #4b6cb7;
+      padding: 10px 25px;
+      border-radius: 12px;
+      margin-left: 600px;
+    }
+
+    .next_program a:hover {
+      background-color: #182848;
+    }
+
+    .codding1 pre {
+      margin: 0px;
+      padding: 15px;
+      font-size: 16px;
+      font-family: Consolas, monospace;
+      line-height: 1.6;
+    }
